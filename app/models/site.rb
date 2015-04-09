@@ -7,11 +7,11 @@ class Site < ActiveRecord::Base
 
   def absolute_url
     if url.start_with?("http://")
-      "http://#{raw_url}"
+      "http://#{host}"
     elsif url.start_with?("https://")
-      "https://#{raw_url}"
+      "https://#{host}"
     else
-      "http://#{raw_url}"
+      "http://#{host}"
     end
   end
 end
