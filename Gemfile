@@ -46,4 +46,3 @@ end
 gem 'puma', '~> 2.11.0'
 gem 'devise', '~> 3.4.1'
 gem 'activeadmin', github: 'activeadmin'
-gem 'net-ping', '~> 1.7.6'
