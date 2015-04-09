@@ -22,6 +22,9 @@ RSpec.describe Site, type: :model do
 
       site2 = FactoryGirl.build(:site, url: "test.com/")
       expect(site2.absolute_url).to eq("http://test.com")
+
+      site3 = FactoryGirl.build(:site, url: "test.com/path/to/")
+      expect(site3.absolute_url).to eq("http://test.com")
     end
   end
 end
