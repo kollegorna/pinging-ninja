@@ -7,11 +7,11 @@ RSpec.describe Site, type: :model do
     expect(site).to be_invalid
   end
 
-  describe "#raw_url" do
-    it "returns raw url" do
+  describe "#host" do
+    it "returns host" do
       site = FactoryGirl.build(:site, url: "https://test.com/")
 
-      expect(site.raw_url).to eq("test.com")
+      expect(site.host).to eq("test.com")
     end
   end
 

@@ -1,7 +1,7 @@
 class Site < ActiveRecord::Base
   validates :url, presence: true
 
-  def raw_url
+  def host
     url.strip.gsub(/(https?:\/\/)*([\w\.\-\.]+)[\w\/]*/i, "\\2")
   end
 

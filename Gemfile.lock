@@ -128,6 +128,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.11.0)
+    net-ping (1.7.7)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -245,6 +246,7 @@ DEPENDENCIES
   faker
   jbuilder (~> 2.0)
   jquery-rails
+  net-ping (~> 1.7.6)
   pg
   puma (~> 2.11.0)
   rails (= 4.2.1)
