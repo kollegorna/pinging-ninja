@@ -1,9 +1,30 @@
-<h1>I'm pinging these urls every 30 seconds</h1>
+<div class="clearfix outline-blue">
 
-<% @sites.each do |site| %>
-  <h2>
-    <a href="<%= site.absolute_url %>" target="_blank">
-      <%= site.absolute_url %>
-    </a>
-  </h2>
-<% end %>
+  <%= link_to root_path do %>
+    <img src="/assets/logo.png" >
+  <% end %>
+
+  <h1>
+    These heroku websites suffer from insomnia!
+    <sup>*</sup>
+  </h1>
+
+  <div>
+    <small>* I'm visiting them every 15 minutes, so they can get no sleep.</small>
+  </div>
+
+  <p>
+  <% @sites.each do |site| %>
+    <div class="sm-col-6 mxn2">
+      <a href="<%= site.absolute_url %>" class="button-transparent orange" target="_blank">
+        <%= site.absolute_url %>
+      </a>
+    </div>
+  <% end %>
+  </p>
+
+</div>
+
+<p class="footer">
+  <a href="https://www.kollegorna.se/" target="_blank">Kollegorna</a>
+</p>
