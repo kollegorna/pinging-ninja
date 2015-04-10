@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+@import "basscss/basscss";
+
+$basic-color: #EB5A2A;
+
+h1 {
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+sup, small {
+  color: $basic-color;
+}
+
+a, a:hover {
+  color: black;
+}
+
+.footer {
+  margin-top: 2em;
+  font-size: smaller;
+
+  a {
+    color: $basic-color;
+  }
+}
